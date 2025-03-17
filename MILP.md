@@ -5,7 +5,7 @@ Minimize the total cost of field visits while ensuring high-priority sites are s
 
 $$
 \min \sum_{i \in S} \sum_{j \in T} c_{ij} x_{ij}
-$$
+
 
 Where:
 - \( S \) = Set of sites requiring maintenance.
