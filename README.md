@@ -43,7 +43,7 @@ cd optimized-field-visits
 ```
 3. Run the notebook to execute the forecasting and optimization:
 ```bash
-jupyter notebook optimized_field_visits.ipynb
+python optimized_field_visits.py
 ```
 
 ## License
