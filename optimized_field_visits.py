@@ -1,4 +1,4 @@
-# optimized_field_visits.ipynb
+# optimized_field_visits.py
 import pandas as pd
 from forecast_kpi import forecast_kpi
 from milp_optimization import optimize_field_visits, identify_sites_requiring_maintenance
