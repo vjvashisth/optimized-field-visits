@@ -5,7 +5,7 @@ Minimize the total cost of field visits while ensuring high-priority sites are s
 
 $$
 \min \sum_{i \in S} \sum_{j \in T} c_{ij} x_{ij}
-
+$$
 
 Where:
 - \( S \) = Set of sites requiring maintenance.
@@ -18,9 +18,11 @@ Where:
 ## **Constraints**
 
 ### **1. Each site is visited by exactly one technician**
+
 $$
 \sum_{j \in T} x_{ij} = 1, \quad \forall i \in S
 $$
+
 Every site must be assigned to a single technician.
 
 ---
