@@ -28,9 +28,11 @@ Every site must be assigned to a single technician.
 ---
 
 ### **2. Technician workload capacity constraint**
+
 $$
 \sum_{i \in S} d_i x_{ij} \leq W_j, \quad \forall j \in T
 $$
+
 Where:
 - \( d_i \) is the service duration at site \( i \).
 - \( W_j \) is the available work hours for technician \( j \).
@@ -38,9 +40,11 @@ Where:
 ---
 
 ### **3. Travel time constraint**
+
 $$
 \sum_{i \in S} \sum_{j \in T} t_{ij} x_{ij} \leq T_j, \quad \forall j \in T
 $$
+
 Where:
 - \( t_{ij} \) is the travel time from technician \( j \) to site \( i \).
 - \( T_j \) is the technician's total available travel time.
@@ -48,6 +52,7 @@ Where:
 ---
 
 ### **4. Binary Decision Variable Constraint**
+
 $$
 x_{ij} \in \{0,1\}, \quad \forall i \in S, j \in T
 $$
@@ -57,19 +62,25 @@ Where \( x_{ij} = 1 \) if technician \( j \) is assigned to site \( i \), otherw
 ---
 
 ## **Final Formulation**
+
 $$
 \min \sum_{i \in S} \sum_{j \in T} c_{ij} x_{ij}
 $$
+
 Subject to:
+
 $$
 \sum_{j \in T} x_{ij} = 1, \quad \forall i \in S
 $$
+
 $$
 \sum_{i \in S} d_i x_{ij} \leq W_j, \quad \forall j \in T
 $$
+
 $$
 \sum_{i \in S} \sum_{j \in T} t_{ij} x_{ij} \leq T_j, \quad \forall j \in T
 $$
+
 $$
 x_{ij} \in \{0,1\}, \quad \forall i \in S, j \in T
 $$
